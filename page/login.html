@@ -22,6 +22,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 40px;
     }
 
     form {
@@ -30,26 +31,33 @@
     }
     .container {
         padding: 5%;
+        border-radius: 2px;
     }
 
     form {
         border: 1px solid black;
         width: 400px;
+        background-color: #fff;
+        
     }
 
     h1 {
         text-align: center;
+        margin-bottom: 20px;
     }
 
     #input {
         width: 100%;
         padding-bottom: 2px;
+       
     }
 
     #submit_button {
         margin: 20px 0 10px 0 ;
         text-align: center;
-        
+        border-radius: 10px;
+        padding: 0 10px 4px 10px;
+        color: black;
     }
     .submit_button, a{
         display: flex;
@@ -59,6 +67,16 @@
 
     a {
         text-decoration: none;
+    }
+
+    body {
+        background-color: #fcf6bd;
+    }
+
+    input {
+        border-radius: 10px;
+        padding-left: 5px;
+        padding-bottom: 2px;
     }
 </style>
 
@@ -107,7 +125,7 @@
                 <div class="submit_button">
                 <input type="submit" value="Login" id="submit_button"><br>
                 </div>
-                <a href="#" style="margin-bottom: 5px;">forgot password</a>
+                <a href="#" style="margin-bottom: 5px;">Forgot Password</a>
                 <a href="./registration.html">Sign Up</a>
             </div>
         </div>

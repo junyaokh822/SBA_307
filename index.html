@@ -18,10 +18,29 @@
         justify-content: center; 
         align-items: center;
     }
+
+    #cat, b {
+        position: relative;
+        animation: picSlide 3s infinite alternate;
+    }
+
+    @keyframes picSlide {
+        from {left: -200px;}
+        to {left: 200px;}
+    }
+
+    #rotateImage {
+        transition: 0.6s ease-in-out;
+    }
+    #rotateImage:hover {
+        transform: rotate(360deg);
+    }
+
 </style>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark" style="padding: 0px; ">
+        <div class="container-fluid bg-primary .text-white">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -48,13 +67,13 @@
         </div>
     </nav>
 
-    <h1 style="text-align: center">Ready for school day?</h1>
+    <h1 style="text-align: center">Ready for school?</h1>
     <div>
-        <img style="width: 150px;" src="./image/cat_shaking_head.gif" alt="cat_shaking_head">
+        <img style="width: 150px;" id="cat" src="./image/cat_shaking_head.gif" alt="cat_shaking_head">
     </div>
-    <b>no</b><br>
+    <b>No</b><br>
     <div>
-        <img style="width: 500px;" src="./image/school.jpg" alt="school">
+        <img style="width: 500px;" src="./image/school.jpg" alt="school" id="rotateImage">
     </div>
 
 
